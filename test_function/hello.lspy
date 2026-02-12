@@ -1,0 +1,7 @@
+(def {f} (fopen "test.txt" "w"))
+(fwrite f "Hello File World!")
+(fclose f)
+
+(def {f2} (fopen "test.txt" "r"))
+(print (fread f2 100))
+(fclose f2)

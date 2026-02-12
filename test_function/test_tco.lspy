@@ -1,0 +1,8 @@
+(fun {sum-iter n acc} {
+  if (== n 0)
+    {acc}
+    {sum-iter (- n 1) (+ n acc)}
+})
+
+(print "Starting recursion...")
+(print (sum-iter 100000 0))
